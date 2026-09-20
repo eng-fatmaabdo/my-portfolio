@@ -1,0 +1,311 @@
+/* start  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* 
+   NAVBAR
+ */
+
+header {
+    width: 100%;
+    padding: 18px 8%;
+    background: #17243a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(23, 36, 58, 0.2);
+}
+
+.logo h2 {
+    color: white;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8bb8ff;
+}
+
+
+/*
+   HERO
+*/
+
+.hero {
+    min-height: 75vh;
+    padding: 90px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background:
+        linear-gradient(
+            135deg,
+            #edf4ff,
+            #f7f5ff,
+            #e9f1ff
+        );
+}
+
+.hero h1 {
+    max-width: 900px;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #17243a;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 18px;
+    color: #52627a;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 13px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #3976ed;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #245dcc;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    color: #17243a;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+/* 
+   ABOUT
+ */
+
+.about {
+    background: white;
+}
+
+.about p {
+    max-width: 750px;
+    color: #5b6b82;
+    font-size: 17px;
+}
+
+/* 
+   EDUCATION
+*/
+
+#education {
+    background: #f0f6ff;
+}
+
+#education p {
+    max-width: 750px;
+    color: #5b6b82;
+}
+
+/* 
+   SKILLS
+ */
+
+.skills {
+    background: white;
+}
+
+.skills ul {
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    min-width: 150px;
+    padding: 22px;
+    text-align: center;
+    background: #f0f5ff;
+    border: 1px solid #dce8ff;
+    border-radius: 12px;
+    color: #245dcc;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(46, 91, 160, 0.08);
+    transition: 0.3s;
+}
+
+.skills li:hover {
+    transform: translateY(-7px);
+    background: #3976ed;
+    color: white;
+    box-shadow: 0 10px 25px rgba(57, 118, 237, 0.2);
+}
+
+/* 
+   PROJECTS
+ */
+
+.projects {
+    background: #f0f6ff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.projects h2 {
+    width: 100%;
+}
+
+.projects > div {
+    flex: 0;
+    min-width: 220px;
+    padding: 25px;
+    background: white;
+    border-radius: 14px;
+    border: 1px solid #e0eaff;
+    box-shadow: 0 6px 20px rgba(39, 75, 130, 0.08);
+    transition: 0.3s;
+}
+
+.projects > div:hover {
+    transform: translateY(-7px);
+    box-shadow:
+        0 12px 30px rgba(39, 75, 130, 0.15);
+}
+
+.projects h3 {
+    color: #245dcc;
+    margin-bottom: 10px;
+}
+
+.projects p {
+    color: #64748b;
+
+ /*
+ contact
+ */
+
+.contact {
+    background: white;
+    text-align: left;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    display: inline-block;
+
+    margin: 15px 10px 0 0;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: #17243a;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    background: #3976ed;
+    transform: translateY(-3px);
+}
+
+   /* FOOTER */
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #17243a;
+    color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 5%;
+
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 70vh;
+        padding: 70px 5%;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    div {
+        padding: 60px 5%;
+    }
+
+    .div h2 {
+        font-size: 28px;
+    }
+
+    .skills ul {
+        justify-content: center;
+    }
+
+    .projects > div {
+        flex: 100%;
+    }
